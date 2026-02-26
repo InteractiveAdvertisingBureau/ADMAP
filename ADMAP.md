@@ -93,42 +93,42 @@ THE STANDARDS, THE SPECIFICATIONS, THE MEASUREMENT GUIDELINES, AND ANY OTHER MAT
 
 ## Table of Contents 
 
-- About This Document 
-- Glossary
-- Overview
-- Technical Requirements 
-  - Privacy and Security Design Goals 
-  - Protocol Architecture and Participants 
-- Mapping Protocol 
-  - Mapping Protocol Inputs
-  - Mapping Protocol Outputs
-  - Examples Input and Output 
-    - Simple Scenario 
-    - Complex Scenario - Using ID Resolution Provider 
-- Attribution Protocol Inputs and Outputs 
-  - Attribution Protocol Inputs
-    - Advertiser Conversions
-    - Publisher Exposures 
-  - Attribution Protocol Outputs 
-- Attribution Protocol Methodology and Architecture 
-  - Overview
-  - Attribution Matching Algorithm 
-    - Engagement Event Types
-    - Lookback Window
-    - Attribution Method 
-  - Matching Service and Aggregation Service Interface 
-- Reference Implementations 
-  - Mapping Using Private Set Intersection
-  - Attribution Using TEE Server 
-    - Matching Service
-    - Aggregation Service
-    - Calculating Match Rates 
-- Collusions and Threats 
-  - Collusion Scenarios
-    - Mapping System Collusion Scenarios
-    - Attribution System Collusion Scenarios 
-  - Threats
-    - Information Leakage via Match Rates 
+- [About This Document](https://github.com/InteractiveAdvertisingBureau/ADMAP/blob/main/ADMAP.md#about-this-document) 
+- [Glossary](https://github.com/InteractiveAdvertisingBureau/ADMAP/blob/main/ADMAP.md#glossary)
+- [Overview](https://github.com/InteractiveAdvertisingBureau/ADMAP/blob/main/ADMAP.md#overview)
+- [Technical Requirements](https://github.com/InteractiveAdvertisingBureau/ADMAP/blob/main/ADMAP.md#technical-requirements)
+  - [Privacy and Security Design Goals](https://github.com/InteractiveAdvertisingBureau/ADMAP/blob/main/ADMAP.md#privacy-and-security-design-goals)
+  - [Protocol Architecture and Participants](https://github.com/InteractiveAdvertisingBureau/ADMAP/blob/main/ADMAP.md#protocol-architecture-and-participants) 
+- [Mapping Protocol](https://github.com/InteractiveAdvertisingBureau/ADMAP/blob/main/ADMAP.md#mapping-protocol) 
+  - [Mapping Protocol Inputs](https://github.com/InteractiveAdvertisingBureau/ADMAP/blob/main/ADMAP.md#mapping-protocol-inputs)
+  - [Mapping Protocol Outputs](https://github.com/InteractiveAdvertisingBureau/ADMAP/blob/main/ADMAP.md#mapping-protocol-outputs)
+  - [Examples Input and Output](https://github.com/InteractiveAdvertisingBureau/ADMAP/blob/main/ADMAP.md#examples-input-and-output) 
+    - [Simple Scenario](https://github.com/InteractiveAdvertisingBureau/ADMAP/blob/main/ADMAP.md#simple-scenario) 
+    - [Complex Scenario - Using ID Resolution Provider](https://github.com/InteractiveAdvertisingBureau/ADMAP/blob/main/ADMAP.md#complex-scenario---using-id-resolution-provider) 
+- [Attribution Protocol Inputs and Outputs](https://github.com/InteractiveAdvertisingBureau/ADMAP/blob/main/ADMAP.md#attribution-protocol-inputs-and-outputs) 
+  - [Attribution Protocol Inputs](https://github.com/InteractiveAdvertisingBureau/ADMAP/blob/main/ADMAP.md#attribution-protocol-inputs)
+    - [Advertiser Conversions](https://github.com/InteractiveAdvertisingBureau/ADMAP/blob/main/ADMAP.md#advertiser-conversions)
+    - [Publisher Exposures](https://github.com/InteractiveAdvertisingBureau/ADMAP/blob/main/ADMAP.md#publisher-exposures) 
+  - [Attribution Protocol Outputs](https://github.com/InteractiveAdvertisingBureau/ADMAP/blob/main/ADMAP.md#attribution-protocol-outputs)
+- [Attribution Protocol Methodology and Architecture](https://github.com/InteractiveAdvertisingBureau/ADMAP/blob/main/ADMAP.md#attribution-protocol-methodology-and-architecture) 
+  - [Overview](https://github.com/InteractiveAdvertisingBureau/ADMAP/blob/main/ADMAP.md#overview-1)
+  - [Attribution Matching Algorithm](https://github.com/InteractiveAdvertisingBureau/ADMAP/blob/main/ADMAP.md#attribution-matching-algorithm)
+    - [Engagement Event Types](https://github.com/InteractiveAdvertisingBureau/ADMAP/blob/main/ADMAP.md#engagement-event-types)
+    - [Lookback Window](https://github.com/InteractiveAdvertisingBureau/ADMAP/blob/main/ADMAP.md#lookback-window)
+    - [Attribution Method](https://github.com/InteractiveAdvertisingBureau/ADMAP/blob/main/ADMAP.md#attribution-method)
+  - [Matching Service and Aggregation Service Interface](https://github.com/InteractiveAdvertisingBureau/ADMAP/blob/main/ADMAP.md#matching-service-and-aggregation-service-interface) 
+- [Reference Implementations](https://github.com/InteractiveAdvertisingBureau/ADMAP/blob/main/ADMAP.md#reference-implementations)
+  - [Mapping Using Private Set Intersection](https://github.com/InteractiveAdvertisingBureau/ADMAP/blob/main/ADMAP.md#mapping-using-private-set-intersection)
+  - [Attribution Using TEE Server ](https://github.com/InteractiveAdvertisingBureau/ADMAP/blob/main/ADMAP.md#attribution-using-tee-server)
+    - [Matching Service](https://github.com/InteractiveAdvertisingBureau/ADMAP/blob/main/ADMAP.md#matching-service)
+    - [Aggregation Service](https://github.com/InteractiveAdvertisingBureau/ADMAP/blob/main/ADMAP.md#aggregation-service)
+    - [Calculating Match Rates](https://github.com/InteractiveAdvertisingBureau/ADMAP/blob/main/ADMAP.md#calculating-match-rates) 
+- [Collusions and Threats](https://github.com/InteractiveAdvertisingBureau/ADMAP/blob/main/ADMAP.md#collusions-and-threats) 
+  - [Collusion Scenarios](https://github.com/InteractiveAdvertisingBureau/ADMAP/blob/main/ADMAP.md#collusion-scenarios)
+    - [Mapping System Collusion Scenarios](https://github.com/InteractiveAdvertisingBureau/ADMAP/blob/main/ADMAP.md#mapping-system-collusion-scenarios)
+    - [Attribution System Collusion Scenarios](https://github.com/InteractiveAdvertisingBureau/ADMAP/blob/main/ADMAP.md#attribution-system-collusion-scenarios) 
+  - [Threats](https://github.com/InteractiveAdvertisingBureau/ADMAP/blob/main/ADMAP.md#threats)
+    - [Information Leakage via Match Rates](https://github.com/InteractiveAdvertisingBureau/ADMAP/blob/main/ADMAP.md#information-leakage-via-match-rates) 
 
 ## Overview 
 
@@ -200,7 +200,7 @@ It is possible for advertisers and engagement data providers to have a pre-exist
 
 #### Attribution System Operator(s) 
 
-Some architectures enabling the described process, such as the one depicted in Figure 1, could require or benefit from the help of a third-party system for matching two or more data sets that have been mapped in a compatible way (whether via a mapping system operator or some other means). Where a third-party attribution-stage matching system is involved, we must consider the third-party entity operating that system and its relationship with the other participants involved in enabling ADMAP. Solution designers must also consider the privacy and security design goals as they relate to such a third-party operator. 
+Some architectures enabling the described process, such as the one depicted in Figure 1, could require or benefit from the help of a third-party system for matching two or more data sets that have been mapped in a compatible way (whether via a mapping system operator or some other means). Where a third-party attribution-stage matching system is involved, we must consider the third-party entity operating that system and its relationship with the other participants involved in enabling ADMAP. Solution designers must also consider the [privacy and security design goals](https://github.com/InteractiveAdvertisingBureau/ADMAP/blob/main/ADMAP.md#privacy-and-security-design-goals) as they relate to such a third-party operator. 
 
 #### End User 
 
@@ -338,7 +338,7 @@ The attribution protocol only requires a core set of fields which are:
 - **Key Type**: The type of key value being provided such as email address or phone number. 
   - Multiple key types and ADMAP IDs may appear in the same row. 
 - **ADMAP ID**: ADMAP ID is the key which is used to join the events between advertiser and publisher. 
-  - ADMAP ID is generated programmatically by the mapping system as described in the “Mapping Protocol” section above. In the case that a mapping system was used, the advertiser/publisher must then merge the ADMAP ID into their input events. 
+  - ADMAP ID is generated programmatically by the mapping system as described in the “Mapping Protocol” section [above](https://github.com/InteractiveAdvertisingBureau/ADMAP/blob/main/ADMAP.md#mapping-protocol). In the case that a mapping system was used, the advertiser/publisher must then merge the ADMAP ID into their input events. 
   - If the mapping system is not used, ADMAP ID is the original **key value**, which is the user’s personal information which can be optionally encoded as described in the “Mapping Inputs” section above. 
   - Multiple key types and ADMAP IDs may appear for the same row. 
 
@@ -482,7 +482,7 @@ The data that flows between the matching service and the aggregation service sho
 
 In order to explain how the protocol and different components will work together, we outline reference designs of two systems, each which would work interoperably with each other. 
 
-Both proposed systems are designed to be operated by a third-party operator, the DCR. Both aim to satisfy the protocol’s privacy and security design goals and are designed according to the input and output requirements described above. 
+Both proposed systems are designed to be operated by a third-party operator, the DCR. Both aim to satisfy the protocol’s [privacy and security design goals](https://github.com/InteractiveAdvertisingBureau/ADMAP/blob/main/ADMAP.md#privacy-and-security-design-goals) and are designed according to the input and output requirements described above. 
 
 We describe reference designs for the following types of systems and assisted by a third-party DCR operator: 
 
@@ -493,7 +493,7 @@ We do not claim that the two proposed designs are the only possible system desig
 
 ### Mapping Using Private Set Intersection 
 
-We present a mapping system using a [Diffie-Hellman private set intersection](https://www.semanticscholar.org/paper/A-More-Efficient-Cryptographic-Matchmaking-Protocol-Meadows/d8c1b48ae4d6e4676d060c06087bb6b1ac81a005) protocol based on elliptic-curve cryptography and leveraging an untrusted helper server. We refer to the untrusted helper server as the *facilitator*. The facilitator performs a join operation on encrypted match key records and also generates the mapping system outputs. The facilitator could be implemented by a Data Clean Room. 
+We present a mapping system using a [Diffie-Hellman private set intersection](https://www.semanticscholar.org/paper/A-More-Efficient-Cryptographic-Matchmaking-Protocol-Meadows/d8c1b48ae4d6e4676d060c06087bb6b1ac81a005) protocol based on elliptic-curve cryptography and leveraging an untrusted helper server. We refer to the untrusted helper server as the *facilitator*. The facilitator performs a join operation on encrypted match key records and also generates the [mapping system outputs](https://github.com/InteractiveAdvertisingBureau/ADMAP/blob/main/ADMAP.md#mapping-protocol-outputs). The facilitator could be implemented by a Data Clean Room. 
 
 Figure 4 depicts the overall mapping workflow. It should be noted that in order to achieve correctness in outputs, participants are assumed to be *honest-but-curious*. 
 
@@ -508,9 +508,9 @@ The steps required to execute the mapping workflow are annotated in Figure 4 and
 3.	The publisher, upon receiving a once-blinded dataset from the advertiser, proceeds to blind it a second time with its own private key and shuffles the twice-blinded records (Figure 4, step 3a). The advertiser, upon receiving a once-blinded dataset from the publisher, proceeds to blind it a second time with its own private key (Figure 4, step 3b), but does not shuffle the records. 
 4.	The parties each upload their twice-blinded datasets to the facilitator (Figure 4, steps 4a and 4b). 
 
-The facilitator then proceeds to perform the join on the twice-blinded datasets and computes the mapping outputs. 
+The facilitator then proceeds to perform the join on the twice-blinded datasets and computes the [mapping outputs](https://github.com/InteractiveAdvertisingBureau/ADMAP/blob/main/ADMAP.md#mapping-protocol-outputs). 
 
-Note that the advertiser’s records are shuffled by the publisher prior to step 4, whereas the publisher’s records are **not** shuffled at any step, and their order is maintained throughout. The preservation of the order of the publisher’s match key records enables the facilitator to generate the mapping output in the same order, as required by the attribution protocol. 
+Note that the advertiser’s records are shuffled by the publisher prior to step 4, whereas the publisher’s records are **not** shuffled at any step, and their order is maintained throughout. The preservation of the order of the publisher’s match key records enables the facilitator to generate the mapping output in the same order, as required by the [attribution protocol](https://github.com/InteractiveAdvertisingBureau/ADMAP/blob/main/ADMAP.md#attribution-protocol-methodology-and-architecture). 
 
 **Blinding**
 
@@ -527,7 +527,7 @@ For clarity, if *A* is the ordered set of input records from the advertiser, and
 
 We present an attribution system involving a matching component that leverages a Trusted Execution Environment (TEE) to restrict access to the advertiser’s and publisher’s provided key records. 
 
-The Attribution System can be logically broken down into two subcomponents: The Matching Service and the Aggregation Service. These do not need to be logically separated, but we present them separately here for clarity. The Matching Service joins on key records and performs attribution (e.g. comparing timestamps and applying attribution methodology) for each conversion. The Aggregation Service is responsible for aggregating the conversion-level results, applying any minimum thresholds or privacy noise, protecting against differential privacy attacks, and otherwise collecting information necessary to create attribution reports for the protocol outputs. 
+The Attribution System can be logically broken down into two subcomponents: The Matching Service and the Aggregation Service. These do not need to be logically separated, but we present them separately here for clarity. The Matching Service joins on key records and performs attribution (e.g. comparing timestamps and applying attribution methodology) for each conversion. The Aggregation Service is responsible for aggregating the conversion-level results, applying any minimum thresholds or privacy noise, protecting against differential privacy attacks, and otherwise collecting information necessary to create attribution reports for the [protocol outputs](https://github.com/InteractiveAdvertisingBureau/ADMAP/blob/main/ADMAP.md#attribution-protocol-outputs). 
 
 #### Matching Service
 
@@ -564,26 +564,26 @@ Step-by-step
 
 #### Calculating Match Rates 
 
-In order to mitigate against Information Leakage via Match Rates, the Aggregation Service shall apply thresholding, rounding, and introduce noise to calculated match rates prior to providing them in output to the advertiser and publisher. 
+In order to mitigate against [Information Leakage via Match Rates](https://github.com/InteractiveAdvertisingBureau/ADMAP/blob/main/ADMAP.md#information-leakage-via-match-rates), the Aggregation Service shall apply thresholding, rounding, and introduce noise to calculated match rates prior to providing them in output to the advertiser and publisher. 
 
 ## Collusions and Threats 
 
-This section provides threat vectors that must be considered by any component designs adhering to this specification. The proposed attribution protocol and matching system designs are analyzed in regards to various collusion scenarios and threats. 
+This section provides threat vectors that must be considered by any component designs adhering to this specification. The proposed [attribution protocol](https://github.com/InteractiveAdvertisingBureau/ADMAP/blob/main/ADMAP.md#attribution-protocol-inputs-and-outputs) and [matching system designs](https://github.com/InteractiveAdvertisingBureau/ADMAP/blob/main/ADMAP.md#reference-implementations) are analyzed in regards to various collusion scenarios and threats. 
 
 ### Collusion Scenarios 
-We use the term *collusion* to mean a scenario where two or more protocol participants share information. This can be due to malicious intent, or because they happen to be commonly owned and operated. For example, a publisher may also own and operate an SSP platform. In some cases, a media company may own and operate both an SSP and a DSP and at the same time assume the role of publisher in this protocol’s operation. In the latter case, the media company may not be malicious, but we must consider the implications of information sharing among a subset of participants insofar as protocol privacy and security design goals are concerned. We therefore propose that: 
+We use the term *collusion* to mean a scenario where two or more [protocol participants](https://github.com/InteractiveAdvertisingBureau/ADMAP/blob/main/ADMAP.md#protocol-architecture-and-participants) share information. This can be due to malicious intent, or because they happen to be commonly owned and operated. For example, a publisher may also own and operate an SSP platform. In some cases, a media company may own and operate both an SSP and a DSP and at the same time assume the role of publisher in this protocol’s operation. In the latter case, the media company may not be malicious, but we must consider the implications of information sharing among a subset of participants insofar as [protocol privacy and security design goals](https://github.com/InteractiveAdvertisingBureau/ADMAP/blob/main/ADMAP.md#privacy-and-security-design-goals) are concerned. We therefore propose that: 
 
 - The mapping protocol designs consider the following collusion scenarios, when a matching system operator is required by the proposed matching system: 
   - Publisher and matching system operator are sharing information 
   - Advertiser and matching system operator are sharing information 
-- The attribution protocol component designs consider the following collusion scenarios: 
+- The [attribution protocol](https://github.com/InteractiveAdvertisingBureau/ADMAP/blob/main/ADMAP.md#attribution-protocol-methodology-and-architecture) component designs consider the following collusion scenarios: 
   - Publisher and attribution system are sharing information 
   - Advertiser and attribution system are sharing information 
 - Additionally, we consider the matching system operator (when a matching system operator is required) and attribution system sharing information. 
 
 #### Mapping System Collusion Scenarios 
 
-In general, the risks associated with a particular mapping approach would need to be analyzed by considering the implementation details of that approach. In this document, we present such an analysis for the reference implementation for mapping that leverages PSI. 
+In general, the risks associated with a particular mapping approach would need to be analyzed by considering the implementation details of that approach. In this document, we present such an analysis for the [reference implementation for mapping that leverages PSI](https://github.com/InteractiveAdvertisingBureau/ADMAP/blob/main/ADMAP.md#mapping-using-private-set-intersection). 
 
 Table 2 shows the implications of the advertiser/publisher colluding with the mapping system operator on the proposed PSI server mapping system design, when used in conjunction with the outlined attribution protocol. 
 
@@ -611,7 +611,7 @@ Table 4 shows the implications of the advertiser/publisher colluding with the at
 
 ## Threats 
 
-In the context of this document, a threat is an activity that can be performed by one or more protocol participants in order to exploit the proposed mechanisms such that our privacy and security design goals are violated. We document and comment on potential threats, attacks, and their possible mitigations below. 
+In the context of this document, a threat is an activity that can be performed by one or more [protocol participants](https://github.com/InteractiveAdvertisingBureau/ADMAP/blob/main/ADMAP.md#protocol-architecture-and-participants) in order to exploit the proposed mechanisms such that our [privacy and security design goals](https://github.com/InteractiveAdvertisingBureau/ADMAP/blob/main/ADMAP.md#privacy-and-security-design-goals) are violated. We document and comment on potential threats, attacks, and their possible mitigations below. 
 
 ### Information Leakage via Match Rates 
 
